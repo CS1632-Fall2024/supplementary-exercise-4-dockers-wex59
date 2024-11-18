@@ -35,12 +35,13 @@ public class ConnectTest {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
+
   @Before
   public void setUp() {
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--headless");
     driver = new ChromeDriver(options);
-    
+
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
   }
